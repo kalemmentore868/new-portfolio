@@ -16,12 +16,12 @@ const About = () => {
 
         <div class="row">
           <div class="col-lg-4">
-            <ScrollAnimation duration={2} animateIn="fadeInLeft">
+            <ScrollAnimation duration={2} animateIn="fadeInLeft" animateOnce>
               <img src="assets/img/my-avatar.png" class="img-fluid" alt="" />
             </ScrollAnimation>
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <ScrollAnimation duration={2} animateIn="fadeInRight">
+            <ScrollAnimation duration={2} animateIn="fadeInRight" animateOnce>
               <AboutContent />
             </ScrollAnimation>
           </div>

@@ -521,6 +521,12 @@ section {
   margin-bottom: 30px;
 }
 
+.portfolio img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
@@ -592,6 +598,7 @@ section {
   background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
   width: 50%;
+  text-decoration: none;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -706,7 +713,7 @@ section {
   border: 1px solid #149ddd;
 }
 
-.services .icon i {
+.services .icon svg {
   color: #fff;
   font-size: 24px;
   line-height: 0;
@@ -716,7 +723,7 @@ section {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.services .icon-box:hover .icon svg {
   color: #149ddd;
 }
 

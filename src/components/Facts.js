@@ -13,11 +13,9 @@ const Facts = () => {
 
         <div class="row no-gutters">
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <ScrollAnimation animateIn="fadeInUp">
+            <ScrollAnimation animateIn="fadeInUp" animateOnce>
               <div class="count-box">
-                <ScrollAnimation animateIn="tada">
-                  <BiSmile /> <span>23</span>
-                </ScrollAnimation>
+                <BiSmile /> <span>23</span>
                 <p>
                   <strong>Happy Clients</strong> Join them
                 </p>
@@ -26,11 +24,9 @@ const Facts = () => {
           </div>
 
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <ScrollAnimation animateIn="fadeInUp">
+            <ScrollAnimation animateIn="fadeInUp" animateOnce>
               <div class="count-box">
-                <ScrollAnimation animateIn="tada">
-                  <BsJournalCheck /> <span>55</span>
-                </ScrollAnimation>
+                <BsJournalCheck /> <span>55</span>
                 <p>
                   <strong>Projects</strong> developed to perfection
                 </p>
@@ -39,11 +35,9 @@ const Facts = () => {
           </div>
 
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <ScrollAnimation animateIn="fadeInUp">
+            <ScrollAnimation animateIn="fadeInUp" animateOnce>
               <div class="count-box">
-                <ScrollAnimation animateIn="tada">
-                  <BiHeadphone /> <span>145</span>
-                </ScrollAnimation>
+                <BiHeadphone /> <span>145</span>
                 <p>
                   <strong>Hours Of Support</strong> site support
                 </p>
@@ -52,11 +46,9 @@ const Facts = () => {
           </div>
 
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <ScrollAnimation animateIn="fadeInUp">
+            <ScrollAnimation animateIn="fadeInUp" animateOnce>
               <div class="count-box">
-                <ScrollAnimation animateIn="tada">
-                  <BsPeople /> <span>3</span>
-                </ScrollAnimation>
+                <BsPeople /> <span>3</span>
                 <p>
                   <strong>Hard Workers</strong> small dedicated team
                 </p>

@@ -12,7 +12,7 @@ const Resume = () => {
 
         <div class="row">
           <div class="col-lg-6">
-            <ScrollAnimation animateIn="fadeInUp">
+            <ScrollAnimation animateIn="fadeInUp" animateOnce>
               <h3 class="resume-title">Sumary</h3>
               <div class="resume-item pb-0">
                 <h4>Kalem Mentore</h4>
@@ -54,7 +54,7 @@ const Resume = () => {
             </ScrollAnimation>
           </div>
           <div class="col-lg-6">
-            <ScrollAnimation animateIn="fadeInUp" delay={100}>
+            <ScrollAnimation animateIn="fadeInUp" delay={100} animateOnce>
               <h3 class="resume-title">Professional Experience</h3>
               <div class="resume-item">
                 <h4>M.E Designs - Web Developer</h4>
