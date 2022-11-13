@@ -3,18 +3,18 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const Resume = () => {
   return (
-    <section id="resume" class="resume">
-      <div class="container">
-        <div class="section-title">
+    <section id="resume" className="resume">
+      <div className="container">
+        <div className="section-title">
           <h2>Resume</h2>
           <p>Here are the highlights of my resume</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6">
+        <div className="row">
+          <div className="col-lg-6">
             <ScrollAnimation animateIn="fadeInUp" animateOnce>
-              <h3 class="resume-title">Sumary</h3>
-              <div class="resume-item pb-0">
+              <h3 className="resume-title">Sumary</h3>
+              <div className="resume-item pb-0">
                 <h4>Kalem Mentore</h4>
                 <p>
                   <em>
@@ -31,8 +31,8 @@ const Resume = () => {
                 </ul>
               </div>
 
-              <h3 class="resume-title">Education</h3>
-              <div class="resume-item">
+              <h3 className="resume-title">Education</h3>
+              <div className="resume-item">
                 <h4>The Weekend Hack &amp; Fullstack Web Development</h4>
                 <h5>2021 - 2022</h5>
                 <p>
@@ -43,7 +43,7 @@ const Resume = () => {
                   web development committed to memory
                 </p>
               </div>
-              <div class="resume-item">
+              <div className="resume-item">
                 <h4>St. Marys College</h4>
                 <h5>2011 - 2018</h5>
                 <p>
@@ -53,10 +53,10 @@ const Resume = () => {
               </div>
             </ScrollAnimation>
           </div>
-          <div class="col-lg-6">
+          <div className="col-lg-6">
             <ScrollAnimation animateIn="fadeInUp" delay={100} animateOnce>
-              <h3 class="resume-title">Professional Experience</h3>
-              <div class="resume-item">
+              <h3 className="resume-title">Professional Experience</h3>
+              <div className="resume-item">
                 <h4>M.E Designs - Web Developer</h4>
                 <h5>Oct 2021 - June 2022</h5>
                 <p>
@@ -81,7 +81,7 @@ const Resume = () => {
                   </li>
                 </ul>
               </div>
-              <div class="resume-item">
+              <div className="resume-item">
                 <h4>TWH - Software Engineering Intern</h4>
                 <h5>June 2022 - Present</h5>
                 <p>

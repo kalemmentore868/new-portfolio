@@ -354,7 +354,7 @@ section {
   margin-right: 10px;
 }
 
-.about .content ul i {
+.about .content ul svg {
   font-size: 16px;
   margin-right: 5px;
   color: #149ddd;
@@ -734,8 +734,10 @@ section {
   font-size: 18px;
 }
 
-.services .title a {
+.services .title p {
   color: #343a40;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .services .title a:hover {
@@ -854,18 +856,28 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .info i {
-  font-size: 20px;
+.contact .info svg {
+  font-size: 25px;
   color: #149ddd;
   float: left;
   width: 44px;
   height: 44px;
+  margin-right: 40px;
   background: #dff3fc;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
   transition: all 0.3s ease-in-out;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.top-con {
+  margin: 20px 0;
+}
+
+.contact .email {
+  margin: 60px 0;
 }
 
 .contact .info h4 {
@@ -876,15 +888,19 @@ section {
   color: #050d18;
 }
 
-.contact .info p {
+/* .contact .info a {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
   color: #173b6c;
 }
 
-.contact .info .email p {
+.contact .info .email a {
   padding-top: 5px;
+} */
+
+.contact .info a {
+  font-size: 1.2rem;
 }
 
 .contact .info .social-links {
@@ -911,9 +927,8 @@ section {
   color: #fff;
 }
 
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
+.contact .info .email svg:hover,
+.contact .info .phone svg:hover {
   background: #149ddd;
   color: #fff;
 }

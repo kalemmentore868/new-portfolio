@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Facts from "./components/Facts";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -20,6 +21,7 @@ function App() {
         <Resume />
         <Portfolio />
         <Services />
+        <Contact />
       </main>
     </div>
   );

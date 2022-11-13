@@ -4,25 +4,29 @@ import { servicesObjs } from "../helper/services";
 
 const Services = () => {
   return (
-    <section id="services" class="services">
-      <div class="container">
-        <div class="section-title">
+    <section id="services" className="services">
+      <div className="container">
+        <div className="section-title">
           <h2>Services</h2>
           <p></p>
         </div>
 
-        <div class="row">
-          {servicesObjs.map((servicesObj) => {
+        <div className="row">
+          {servicesObjs.map((servicesObj, index) => {
             return (
-              <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+              <div
+                key={index}
+                className="col-lg-4 col-md-6 icon-box"
+                data-aos="fade-up"
+              >
                 <ScrollAnimation animateIn="fadeInUp" animateOnce>
-                  <div class="icon">
+                  <div className="icon">
                     <servicesObj.icon />
                   </div>
-                  <h4 class="title">
-                    <a href="">{servicesObj.title}</a>
+                  <h4 className="title">
+                    <p>{servicesObj.title}</p>
                   </h4>
-                  <p class="description">{servicesObj.description}</p>
+                  <p className="description">{servicesObj.description}</p>
                 </ScrollAnimation>
               </div>
             );

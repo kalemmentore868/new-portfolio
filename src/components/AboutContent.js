@@ -1,52 +1,53 @@
 import React from "react";
+import { AiOutlineRight } from "react-icons/ai";
 
 const AboutContent = () => {
   return (
     <>
       <h3>UI/UX Designer &amp; Web Developer.</h3>
-      <p class="fst-italic">
+      <p className="fst-italic">
         I have a passion for all things technology and design, from software
         engineering to UI/UX.
       </p>
-      <div class="row">
-        <div class="col-lg-6">
+      <div className="row">
+        <div className="col-lg-6">
           <ul>
             <li>
-              <i class="bi bi-chevron-right"></i>
+              <AiOutlineRight />
               <strong>Birthday:</strong> <span>18 Oct 1998</span>
             </li>
             <li>
-              <i class="bi bi-chevron-right"></i>
+              <AiOutlineRight />
               <strong>Website:</strong> <span>www.example.com</span>
             </li>
             <li>
-              <i class="bi bi-chevron-right"></i>
+              <AiOutlineRight />
               <strong>Phone:</strong> <span>+1868 2780498</span>
             </li>
             <li>
-              <i class="bi bi-chevron-right"></i>
+              <AiOutlineRight />
               <strong>City:</strong>
               <span>Piarco, Trinidad and Tobago</span>
             </li>
           </ul>
         </div>
-        <div class="col-lg-6">
+        <div className="col-lg-6">
           <ul>
             <li>
-              <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+              <AiOutlineRight /> <strong>Age:</strong>
               <span>24</span>
             </li>
             <li>
-              <i class="bi bi-chevron-right"></i>
+              <AiOutlineRight />
               <strong>Certification:</strong> <span>FullStack</span>
             </li>
             <li>
-              <i class="bi bi-chevron-right"></i>
+              <AiOutlineRight />
               <strong>Email:</strong>
               <span>kalemmalek123@gmail.com</span>
             </li>
             <li>
-              <i class="bi bi-chevron-right"></i>
+              <AiOutlineRight />
               <strong>Freelance:</strong> <span>Available</span>
             </li>
           </ul>

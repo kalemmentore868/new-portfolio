@@ -1,37 +1,48 @@
 import React from "react";
-import {
-  BsFacebook,
-  BsInstagram,
-  BsGoogle,
-  BsLinkedin,
-  BsGithub,
-} from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Profile = () => {
   return (
     <div className="profile">
       <img
-        src="assets/img/my-avatar.png"
-        alt=""
+        src="assets/img/profile-img.jpg"
+        alt="Profile pic"
         className="img-fluid rounded-circle"
       />
       <h1 className="text-light">
         <a href="index.html">Kalem Mentore</a>
       </h1>
       <div className="social-links mt-3 text-center">
-        <a href="#" className="twitter">
+        <a
+          href="https://github.com/kalemmentore868"
+          className="twitter"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsGithub />
         </a>
-        <a href="#" className="facebook">
+        <a
+          href="https://www.facebook.com/kalem.mentore/"
+          target="_blank"
+          rel="noreferrer"
+          className="facebook"
+        >
           <BsFacebook />
         </a>
-        <a href="#" className="instagram">
+        <a
+          href="https://www.instagram.com/blank_868/"
+          target="_blank"
+          rel="noreferrer"
+          className="instagram"
+        >
           <BsInstagram />
         </a>
-        <a href="#" className="google-plus">
-          <BsGoogle />
-        </a>
-        <a href="#" className="linkedin">
+        <a
+          href="https://www.linkedin.com/in/kalem-mentore-6319b121a/"
+          className="linkedin"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsLinkedin />
         </a>
       </div>
