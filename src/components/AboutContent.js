@@ -18,7 +18,8 @@ const AboutContent = () => {
             </li>
             <li>
               <AiOutlineRight />
-              <strong>Website:</strong> <span>www.example.com</span>
+              <strong>Website:</strong>{" "}
+              <span>https://kalemmentore-portfolio-v2.netlify.app</span>
             </li>
             <li>
               <AiOutlineRight />
