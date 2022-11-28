@@ -8,10 +8,10 @@ const Footer = () => {
           &copy; Copyright{" "}
           <strong>
             <a
-              href="https://kalemmentore-portfolio-v1.netlify.app"
+              href="https://kalemmentore-portfolio-v2.netlify.app"
               target="_blank"
             >
-              v1
+              v2
             </a>
           </strong>
         </div>

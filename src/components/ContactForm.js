@@ -4,14 +4,45 @@ import Row from "react-bootstrap/Row";
 
 const ContactForm = () => {
   const [validated, setValidated] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     const form = event.currentTarget;
+
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+    } else {
+      try {
+        const response = await fetch(
+          "https://portfolio-servers-production.up.railway.app/api/contact2",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name,
+              subject,
+              email,
+              message,
+            }),
+          }
+        );
+        if (response.status === 200) {
+          setName("");
+          setEmail("");
+          setMessage("");
+          setSubject("");
+          setValidated(true);
+        }
+      } catch (error) {
+        console.log(error);
+      }
     }
-
     setValidated(true);
   };
 
@@ -20,15 +51,20 @@ const ContactForm = () => {
       noValidate
       validated={validated}
       onSubmit={handleSubmit}
-      action="https://formspree.io/f/xeqdvyob"
-      method="POST"
       role="form"
       className="php-email-form contact-left"
     >
       <Row>
         <Form.Group className="col-md-6">
           <Form.Label htmlFor="name">Your Name</Form.Label>
-          <Form.Control type="text" name="name" id="name" required />
+          <Form.Control
+            type="text"
+            name="name"
+            id="name"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
           <Form.Control.Feedback type="invalid">
             {" "}
             Please provide a name{" "}
@@ -43,6 +79,8 @@ const ContactForm = () => {
             name="email"
             id="email"
             required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <Form.Control.Feedback type="invalid">
             Please provide a valid email.
@@ -56,8 +94,10 @@ const ContactForm = () => {
           type="text"
           className="form-control"
           name="subject"
+          value={subject}
           id="subject"
           required
+          onChange={(e) => setSubject(e.target.value)}
         />
         <Form.Control.Feedback type="invalid">
           Please provide a subject.
@@ -69,8 +109,10 @@ const ContactForm = () => {
         <Form.Control
           as="textarea"
           name="message"
+          value={message}
           rows="10"
           required
+          onChange={(e) => setMessage(e.target.value)}
         ></Form.Control>
         <Form.Control.Feedback type="invalid">
           Please provide a message
